@@ -3,6 +3,7 @@ import Toolbar from './Toolbar/Toolbar'
 import './App.css';
 import SideDrawer from '../src/SideDrawer/SideDrawer'
 import BackDrop from '../src/Backdrop/Backdrop'
+import Body from './Components/Body'
 
 class App extends Component {
   state = {
@@ -12,6 +13,7 @@ class App extends Component {
   drawerToggleClickHandler = () => {
  this.setState((prevState) =>{
    return{sideDrawerOpen: !prevState.sideDrawerOpen}
+
  })
 
   };
@@ -27,16 +29,18 @@ class App extends Component {
     return (
       <div style = {{height: '100%'}}>
         <Toolbar
-         drawerClickHandler = {this.drawerToggleClickHandler}
+         drawerClickHandler = {this.drawerToggleClickHandler} 
         />
+    
         {sideDrawer}
         {backdrop}
-        <main style =  {{marginTop: '64px'}}>
-        <p>This is the page content</p>
-        </main>
+              
+        <Body/>
+        
       </div>
     );
   }
 }
 
 export default App;
+
