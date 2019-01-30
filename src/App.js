@@ -31,7 +31,6 @@ class App extends Component {
         <Toolbar
          drawerClickHandler = {this.drawerToggleClickHandler} 
         />
-    
         {sideDrawer}
         {backdrop}
               

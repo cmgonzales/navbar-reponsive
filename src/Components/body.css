@@ -10,3 +10,8 @@ background-repeat: no-repeat;
 }
 
 
+.textArea{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
