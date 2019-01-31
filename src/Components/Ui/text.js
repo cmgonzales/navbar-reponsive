@@ -3,10 +3,10 @@ import './text.css'
 
 const Text = props => (
 
-    <div className = "label">
+    <div >
    
-        <h3>{props.title}</h3>
-        <input></input>
+        <h6 className = "label">{props.title}</h6>
+        <input className = "text"></input>
     </div>
 
 )

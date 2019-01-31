@@ -1,4 +1,8 @@
 .label{
-    margin-top: 0;
-    padding-bottom: 40px;
+   color: white;
+   padding-top: 10px;
+}
+.text{
+    width: 90%;
+    padding-top: 10px;
 }

@@ -5,13 +5,11 @@ width:100%;
 background-image: url('../img/nature1.jpeg');
 background-size: cover;
 background-repeat: no-repeat;
-
-    
 }
 
-
-.textArea{
-    display: flex;
-    flex-wrap: wrap;
+.headinginfo{
     color: white;
+    padding-top: 20px;
 }
+
+

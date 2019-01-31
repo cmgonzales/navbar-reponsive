@@ -16,22 +16,30 @@ class App extends Component {
 
  })
 
-  };
+};
+ //closing the modal
+
+ backdropClickHandler = () => {
+   this.setState({sideDrawerOpen: false})
+   
+ }
+
+ 
 
   render() {
-    let sideDrawer;
+  
     let backdrop;
 
     if(this.state.sideDrawerOpen){
-      sideDrawer = <SideDrawer/>
-      backdrop = <BackDrop/>
+      backdrop = <BackDrop click = {this.backdropClickHandler}/>
     }
     return (
       <div style = {{height: '100%'}}>
         <Toolbar
          drawerClickHandler = {this.drawerToggleClickHandler} 
         />
-        {sideDrawer}
+        
+        <SideDrawer show = {this.state.sideDrawerOpen}/>
         {backdrop}
               
         <Body/>
