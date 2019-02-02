@@ -4,6 +4,7 @@ import './App.css';
 import SideDrawer from '../src/SideDrawer/SideDrawer'
 import BackDrop from '../src/Backdrop/Backdrop'
 import Body from './Components/Body'
+import Middle from  './Components/middle'
 
 class App extends Component {
   state = {
@@ -42,7 +43,7 @@ class App extends Component {
         {backdrop}
               
         <Body/>
-        
+        <Middle/>
       </div>
     );
   }
