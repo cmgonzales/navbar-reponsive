@@ -9,12 +9,7 @@ import './DrawerToggleButton.css'
         <div className = "toggle-button_line"></div>
          <div className = "toggle-button_line"></div>
     </button>
-
-
-
-
-     )
-
+ )
 
 
 export default drawerToggleButton

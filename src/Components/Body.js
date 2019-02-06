@@ -2,20 +2,24 @@ import React from 'react'
 import './body.css'
 import Text from './Ui/text'
 import { Container, Row, Col, Button } from 'reactstrap'
+import {Background} from  './image'
 
 
-
-const center = {
-  paddingTop: '180px'
+const img = {
+    height: `100vh`,
+    width: '100%',
+    backgroundImage: `url(${Background})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
 }
 
 const Body = props => (
 
     <div className="cover">
-        <div className='img'>
+        <div style  = {img}>
 
             <Container>
-                <Row style = {center}>
+                <Row style = {{paddingTop: `180px`}}>
                     <Col md="8" style = {{textAlign:"center", paddingTop: '40px'}}>
                         <h1 style = {{color: "white"}}>THE<br /> PERFECT TOUCH</h1>
                         <h4 className = "headinginfo">Custom floral arragemewnt tailored to your <br/> style and space. Starting at $75 per delivery.</h4>
