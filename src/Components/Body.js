@@ -2,7 +2,7 @@ import React from 'react'
 import './body.css'
 import Text from './Ui/text'
 import { Container, Row, Col, Button } from 'reactstrap'
-import {Background} from  './image'
+import Background from  '../img/nature1.jpeg'
 
 
 const img = {
@@ -15,7 +15,6 @@ const img = {
 
 const Body = props => (
 
-    <div className="cover">
         <div style  = {img}>
 
             <Container>
@@ -25,22 +24,21 @@ const Body = props => (
                         <h4 className = "headinginfo">Custom floral arragemewnt tailored to your <br/> style and space. Starting at $75 per delivery.</h4>
                         <h4 className = "headinginfo">Schedule a complimentary design consultation today.</h4>
                     </Col>
-                    <Col md="4">
+                    <Col md="3">
                         <div className="textArea" >
                             <Text title = "First Name"/>
                             <Text title = "Phone"/>
                             <Text title = "Email"/>
                             <Text title = "City"/>
-                           <Button style = {{marginLeft: '230px', marginTop:'20px'}} color="danger">Submit</Button>
-                            
+                           <Button style = {{ marginTop:'20px'}} color="danger">Submit</Button>
                         </div>
                     </Col>
+                ]
                 </Row>
             </Container>
         </div>
 
-
-    </div>
+  
 
 )
 

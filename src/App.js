@@ -4,7 +4,7 @@ import './App.css';
 import SideDrawer from '../src/SideDrawer/SideDrawer'
 import BackDrop from '../src/Backdrop/Backdrop'
 import Body from './Components/Body'
-import Middle from  './Components/middle'
+import Works from './Components/the_works'
 
 class App extends Component {
   state = {
@@ -40,10 +40,10 @@ class App extends Component {
          drawerClickHandler = {this.drawerToggleClickHandler} 
         />
         <SideDrawer show ={this.state.sideDrawerOpen}/>
-        {backdrop}
-              
+        {backdrop}            
         <Body/>
-        <Middle/>
+        <h1 style = {{textAlign: 'center', paddingTop: '20px', fontFamily: 'sarif'}}>HOW IT WORKS</h1>
+        <Works/>
       </div>
     );
   }
