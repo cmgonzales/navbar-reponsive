@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import Works from './Ui/works'
 import './the_works.css'
 
 const the_works = (props) => {
@@ -7,19 +8,25 @@ const the_works = (props) => {
   <div className = "steps">
     <Row>
     <Col md='4'>
-     <h1 className = "numbers"> - 1 -</h1>
-     <p>DESIGN</p>
-     <p>Your personal design consultant <br/> meets with you to duscuss style <br/> preference and space </p>
+    <Works
+        number = '-1-'
+        intro = 'DESIGN'
+        info = {`Your personal design consultant \n meets with you to duscuss style, \n preference and space`}
+    />
       </Col>
       <Col md='4'>
-      <h1 className = "numbers"> - 2 -</h1>
-      <p>SCHEDULE</p>
-      <p>We provide a custome proposal for <br/> floral service based on your schedule <br/>(weekly, bi-weekly or monthly)</p>
+      <Works
+        number = '-2-'
+        intro = 'SCHEDULE'
+        info = {`We provide a custom proposal for \n floral service based on your schedule \n (weekly, bi-weekly or monthly)`}
+    />
       </Col>
       <Col md='4'>
-      <h1 className = "numbers"> - 3 -</h1>
-      <p>ENJOY</p>
-      <p>We hand deliver your custom <br/> arrangements for you to enjoy. <br/>Its that simple</p>
+      <Works
+        number = '-3-'
+        intro = 'ENJOY'
+        info = {`We hand deliver your custom \n arrangement for you to enjoy \n Its that simple`}
+    />
       </Col>
       </Row>
    

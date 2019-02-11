@@ -1,3 +1,5 @@
 .steps{
     text-align: center;
+    white-space: pre-wrap;
+    padding-bottom: 60px;
 }

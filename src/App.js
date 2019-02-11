@@ -5,6 +5,7 @@ import SideDrawer from '../src/SideDrawer/SideDrawer'
 import BackDrop from '../src/Backdrop/Backdrop'
 import Body from './Components/Body'
 import Works from './Components/the_works'
+import Portfolio from './Components/portfolio'
 
 class App extends Component {
   state = {
@@ -44,6 +45,7 @@ class App extends Component {
         <Body/>
         <h1 style = {{textAlign: 'center', paddingTop: '20px', fontFamily: 'sarif'}}>HOW IT WORKS</h1>
         <Works/>
+        <Portfolio/>
       </div>
     );
   }
