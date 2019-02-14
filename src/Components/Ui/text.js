@@ -1,14 +1,29 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './text.css'
 
-const Text = props => (
+class Text extends Component {
+constructor(props){
+    super(props)
 
-    <div >
-   
-        <h6 className = "label">{props.title}</h6>
-        <input className = "text"></input>
+    this.state = {
+        input: ['First Name', 'Phone', 'Email', 'City']
+    }
+}
+
+    render(){
+        return(
+    <div className = 'text'>
+      {this.state.input.map(inputs => (
+          <label>
+       <h1>{inputs}</h1> 
+      <input></input>
+        </label>
+       ))}
     </div>
 
-)
+    )
+}
+
+}
 
 export default Text 

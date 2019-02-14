@@ -1,0 +1,15 @@
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(223, 219, 219);
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.img{
+    width: 20%;
+    height: 30vh;
+   margin: 5px;
+  
+}
