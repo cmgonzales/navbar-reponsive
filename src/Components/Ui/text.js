@@ -15,8 +15,8 @@ constructor(props){
     <div className = 'text'>
       {this.state.input.map(inputs => (
           <label>
-       <h1>{inputs}</h1> 
-      <input></input>
+       <h1 className = "inputs">{inputs}</h1> 
+      <input className = 'input' ></input>
         </label>
        ))}
     </div>

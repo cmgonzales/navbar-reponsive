@@ -1,8 +1,15 @@
-.label{
-   color: white;
-   padding-top: 10px;
+.inputs{
+    font-size: 1em;
 }
+
+
 .text{
     display: flex;
     flex-direction: column;
+    color: white;
+
+}
+
+.input{
+    width: 75%;
 }

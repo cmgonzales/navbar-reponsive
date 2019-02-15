@@ -3,8 +3,7 @@ import { Row, Col } from 'reactstrap';
 import Works from './Ui/works'
 import './the_works.css'
 
-const the_works = (props) => {
-  return (
+const the_works = props => ( 
   <div className = "steps">
     <Row>
     <Col md='4'>
@@ -29,9 +28,9 @@ const the_works = (props) => {
     />
       </Col>
       </Row>
-   
     </div>
   );
-};
+    
+
 
 export default the_works;
