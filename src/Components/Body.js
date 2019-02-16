@@ -31,7 +31,7 @@ const Body = props => (
             <Col md = '4'>
             <div className = 'user_input'>
                 <Text />
-                <Button color="danger">Submit</Button>
+                <Button color="danger" className = 'button'>Submit</Button>
             </div>
             </Col>
             </Row>
