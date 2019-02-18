@@ -19,8 +19,10 @@ const Footer = props =>(
             <li>IN THE NEWS</li>
             <li>CONTACT</li>
         </ul>
-     
-        </Col>
+          </Col>
+          <Col md ='2'>
+              <h1>Carosel</h1>
+          </Col>
         </Row>
     </div>
 
