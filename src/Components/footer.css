@@ -1,27 +1,37 @@
 .footer{
-    height: 60vh;
+    height: 10vh;
 }
-.sub{
-    height: 400px;
-    
-}
+
 ul li{
+    display: flex;
     list-style: none;
     font-size: 10%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
     
+}
+.social{
+    height: 100%;
+  top: 0;
+  bottom: 0;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 ul{
-  
-    margin: 0 auto;
+ 
     padding: 0;
-    
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
 
-            -webkit-column-gap: 2px; /* Chrome, Safari, Opera */
-            -moz-column-gap: 2px; /* Firefox */
-            column-gap: 2px;
 }
 
+.form{
+    margin: 0 auto;
+    width: 70%;
+}
