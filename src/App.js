@@ -43,7 +43,7 @@ class App extends Component {
         />
         <SideDrawer show ={this.state.sideDrawerOpen}/>
         {backdrop}            
-        <Body/>
+      <Body/>
         <h1 style = {{textAlign: 'center', paddingTop: '20px', fontFamily: 'sarif'}}>HOW IT WORKS</h1>
         <Works/>
         <Portfolio/>

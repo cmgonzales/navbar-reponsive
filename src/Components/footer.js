@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import {Row, Col, InputGroup, Button, InputGroupAddon, Input} from 'reactstrap'
+import {Row, Col, Container, InputGroup, Button, InputGroupAddon, Input} from 'reactstrap'
 
 
 let icons = ['fab fa-facebook-f', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-pinterest']
@@ -8,8 +8,9 @@ let icons = ['fab fa-facebook-f', 'fab fa-twitter', 'fab fa-instagram', 'fab fa-
 const Footer = props =>(
 
     <div className = 'footer'>
+    <Container fluid>
     <Row  className = "sub">
-    <Col md = '4'>
+    <Col md = '5'>
         <ul>
             <li>FLORAL SUBCRIPTIONS</li>
             <li>WEDDINGS</li>
@@ -29,7 +30,7 @@ const Footer = props =>(
            )}
            </div>
           </Col>
-          <Col md = '6'>
+          <Col md = '5'>
           <div className = 'form'>
           <InputGroup >
           <Input placeholder = "Subscribe" />
@@ -40,6 +41,7 @@ const Footer = props =>(
           </div>
           </Col>
         </Row>
+        </Container>
     </div>
 
 )

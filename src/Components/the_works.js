@@ -1,10 +1,11 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import Works from './Ui/works'
 import './the_works.css'
 
 const the_works = props => ( 
   <div className = "steps">
+  <Container>
     <Row>
     <Col md='4'>
     <Works
@@ -28,6 +29,7 @@ const the_works = props => (
     />
       </Col>
       </Row>
+      </Container>
     </div>
   );
     
