@@ -3,6 +3,7 @@ import one from '../img/flower1.jpeg'
 import two from '../img/flower2.jpeg'
 import three from '../img/flower3.jpg'
 import './porfolio.css'
+import { Container, Row, Col } from 'reactstrap'
 
 class Portfolio extends Component {
     constructor(props) {
@@ -12,12 +13,19 @@ class Portfolio extends Component {
         }
     }
     render() {
-
+        const { flower } = this.state
         return (
             <div className="image">
-                {this.state.flower.map(flowers => (
-                    <img className='img' src={flowers} Alt='flowers' />
-                ))}
+                <Container fluid>
+                    <Row>
+
+                        {flower.map(flowers =>
+                            <Col md='2'>
+                                <img className='img' src={flowers} Alt='flowers' />
+                            </Col>
+                        )}
+                    </Row>
+                </Container>
             </div>
         )
     }
