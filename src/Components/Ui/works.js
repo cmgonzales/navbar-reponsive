@@ -1,5 +1,6 @@
 import React from 'react'
 import './works.css'
+import PropTypes from 'prop-type'
 
 const Works = props =>(
  <div>
@@ -10,3 +11,8 @@ const Works = props =>(
 )
 
 export default Works
+
+Works.propType = {
+  intro: PropTypes.string,
+  info: PropTypes.string
+}

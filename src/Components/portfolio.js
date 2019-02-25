@@ -18,7 +18,6 @@ class Portfolio extends Component {
             <div className="image">
                 <Container fluid>
                     <Row>
-
                         {flower.map(flowers =>
                             <Col md='2'>
                                 <img className='img' src={flowers} Alt='flowers' />

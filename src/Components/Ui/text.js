@@ -2,17 +2,12 @@ import React, { Component } from 'react'
 import './text.css'
 
 class Text extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
+        state = {
             input: ['First Name', 'Phone', 'Email', 'City']
-        }
-    }
-
+        
+    } 
     render() {
         const { input } = this.state
-
         return (
             <div className='text'>
                 {input.map(inputs => (
@@ -22,7 +17,6 @@ class Text extends Component {
                     </label>
                 ))}
             </div>
-
         )
     }
 
